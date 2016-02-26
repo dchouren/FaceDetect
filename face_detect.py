@@ -6,7 +6,7 @@ import sys
 sys.path.insert(1,'/usr/local/opencv/2.4.5/lib64/python2.7')
 import cv2
 import glob
-import ipdb
+# import ipdb
 import os
 
 # Get user supplied values
@@ -40,8 +40,8 @@ for image_path in image_paths:
     for (x, y, w, h) in faces:
         cv2.rectangle(image, (x, y), (x+w, y+h), (0, 255, 0), 2)
 
-    cv2.imshow("Faces found", image)
-    cv2.waitKey(0)
+    # cv2.imshow("Faces found", image)
+    # cv2.waitKey(0)
 
 
 
