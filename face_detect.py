@@ -1,5 +1,5 @@
 """
-python face_detect.py ../../ami/amicorpus/ES2014a/video/ES2014a.Closeup1_images/  ./haarcascade_frontalface_default.xml
+python face_detect.py ../../extracted_features/images/ES2014a/ES2014a.Closeup1_images/  ./haarcascade_frontalface_default.xml
 """
 
 import sys
@@ -39,9 +39,10 @@ for image_path in image_paths:
     # Draw a rectangle around the faces
     for (x, y, w, h) in faces:
         cv2.rectangle(image, (x, y), (x+w, y+h), (0, 255, 0), 2)
+        print x, y, w, h
 
-    # cv2.imshow("Faces found", image)
-    # cv2.waitKey(0)
+    cv2.imshow("Faces found", image)
+    cv2.waitKey(0)
 
 
 
