@@ -3,7 +3,7 @@ python face_detect.py ../../extracted_features/images/ES2014a/ES2014a.Closeup1_i
 """
 
 import sys
-sys.path.insert(1,'/usr/local/opencv/2.4.5/lib64/python2.7')
+# sys.path.insert(1,'/usr/local/opencv/2.4.5/lib64/python2.7')
 import cv2
 import glob
 # import ipdb
